@@ -2,6 +2,7 @@
     text-align: center;
     padding: 10px;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid orange;
 }
 
 .cart h1{
@@ -9,4 +10,8 @@
     text-transform: uppercase;
     font-size: 30px;
     border-bottom: 1px solid gray;
+}
+
+.budget{
+    color: coral;
 }

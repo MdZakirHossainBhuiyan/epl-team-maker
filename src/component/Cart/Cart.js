@@ -1,5 +1,7 @@
 import React from 'react';
 import './Cart.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFutbol } from '@fortawesome/free-solid-svg-icons';
 
 const Cart = (props) => {
     const cart = props.cart;
@@ -9,7 +11,10 @@ const Cart = (props) => {
         <div className="cart">
             <h1>Team info</h1>
             <h4>Selected Player: {cart.length}</h4>
-            <p>Total Budget: ${totalBudget} M</p>
+            <p className="budget">Total Budget: ${totalBudget} M</p>
+            <FontAwesomeIcon icon={faFutbol} /> <FontAwesomeIcon icon={faFutbol} /> <FontAwesomeIcon icon={faFutbol} />
+
+            <br/><br/>
             {
                 cart.map(player => <p>{player.name} - ${player.salary} M</p>)
             }

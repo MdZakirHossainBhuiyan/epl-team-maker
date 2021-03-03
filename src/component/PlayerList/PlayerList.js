@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './PlayerList.css';
 import fakeData from '../../fakeData/players.js';
 import Player from '../Player/Player';
 import Cart from '../Cart/Cart';
 
 const PlayerList = () => {
-    const first10 = fakeData.slice(0, 11);
-    const [players, setPlayers] = useState(first10)
+    const [players, setPlayers] = useState(fakeData)
     const [cart, setCart] = useState([]);
+    useEffect(() => {
+        setPlayers(players)
+      }, [])
     
     const handleAddPlayer = (player) =>{
         let newCart = [...cart, player];
