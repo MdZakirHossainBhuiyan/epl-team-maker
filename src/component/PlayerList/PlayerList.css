@@ -1,0 +1,15 @@
+.player-container{
+    display: flex;
+}
+
+.player-area{
+    width: 70%;
+    margin-left: 250px;
+    border-right: 1px solid orange;
+}
+
+.cart-area{
+    width: 30%;
+    margin-top: 10px;
+    padding-left: 10px;
+}

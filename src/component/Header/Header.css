@@ -1,0 +1,36 @@
+.header{
+    height: 100px;
+    border-bottom: 1px solid blue;
+    display: flex;
+    background-color: black;
+}
+.header img{
+    height: 90px;
+    margin-left: 200px;
+    padding: 5px;
+}
+
+.header h1{
+    color: orange;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.header nav{
+    margin-left: 250px;
+    font-family: sans-serif;
+    margin-top: 45px;
+}
+
+.header a{
+    color: orange;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.header a:hover{
+    color: white;
+}

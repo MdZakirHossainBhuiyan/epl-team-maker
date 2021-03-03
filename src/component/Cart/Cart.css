@@ -1,0 +1,12 @@
+.cart{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cart h1{
+    color: tomato;
+    text-transform: uppercase;
+    font-size: 30px;
+    border-bottom: 1px solid gray;
+}
